@@ -1,36 +1,13 @@
+// import template from './hbs files/template.hbs';
+// import menuData from './json files/menu.json';
+
+import template from './js files/template';
+import theme from './js files/theme';
 import styles from './styles.css';
 
-const inputChangingThemeRef = document.querySelector('#theme-switch-toggle');
-const bodyRef = document.querySelector('body');
-const checkboxRef = document.querySelector('#theme-switch-toggle');
-console.dir(checkboxRef);
+// const ulRef = document.querySelector('.js-menu');
 
-const darkTheme = () => {
-  bodyRef.classList.remove('light-theme');
-  localStorage.setItem('theme', 'dark-theme');
-  bodyRef.classList.add('dark-theme');
-};
+// console.log(menuData);
 
-const lightTheme = () => {
-  bodyRef.classList.remove('dark-theme');
-  localStorage.setItem('theme', 'light-theme');
-  bodyRef.classList.add('light-theme');
-};
-
-const savedTheme = () => {
-  bodyRef.classList.add(`${localStorage.getItem('theme')}`);
-  if (`${localStorage.getItem('theme')}` === 'dark-theme') {
-    inputChangingThemeRef.checked = 'true';
-  }
-};
-savedTheme();
-
-const changeTheme = event => {
-  if (inputChangingThemeRef.checked) {
-    darkTheme();
-  } else if (!inputChangingThemeRef.checked) {
-    lightTheme();
-  }
-};
-
-inputChangingThemeRef.addEventListener('change', changeTheme);
+// const markup = template(menuData);
+// ulRef.insertAdjacentHTML('beforeend', markup);
