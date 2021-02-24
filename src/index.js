@@ -1,8 +1,8 @@
 // import template from './hbs files/template.hbs';
 // import menuData from './json files/menu.json';
 
-import template from './js files/template';
-import theme from './js files/theme';
+import template from './js_files/template';
+import theme from './js_files/theme';
 import styles from './styles.css';
 
 // const ulRef = document.querySelector('.js-menu');
